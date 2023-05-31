@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #22254b;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+
+header {
+    background-color: #564867;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo{
+
+    line-height: 36px;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: sans-serif;
+    color: #ddd;
+    padding: 0 15px;
+}
+
+h1{
+    position: relative;
+    font-size: 25px;
+    color: #252839;
+    -webkit-text-stroke: 0.3vw #383d52;
+    text-transform: uppercase;
+    color: #faeb14;
+}
+
+h1::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #01fe87;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #01fe87;
+    overflow: hidden;
+    animation: 6s linear infinite;
+
+}
+
+@keyframes animate
+{
+    0%,10%,100%
+   
+
+{
+    width:0;
+}
+
+70%,90%
+{
+    width:100%;
+}
+
+
+}
+
+
+
+
+a{
+    border: 1px solid #007bff;
+    background: #007bff;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+
+}
+
+a:hover{
+    background: rgb(4, 215, 71);
+    color: #007bff;
+}
+
+a:active{
+    background: #faeb14;
+    color: #ddd;
+}
+
+h2{
+    border: 1px solid white;
+    border-radius: 8px solid white;
+    text-decoration: solid;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: fantasy;
+    color: #faeb14;
+    padding: 10px;
+}
+
+
+
+.container{
+    background: #001600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+footer{
+    background: black;
+    height: 45px;
+    width: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 20px;
+    color: #ddd;
+}
+
+.footerbottom{
+    background: black;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+.footerbottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 100;
+}
